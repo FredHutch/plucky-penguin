@@ -1,8 +1,10 @@
 # What is This?
 
-Running the keras_experimental library is challenging as this library hasn't been updated in a while, making it incompatible with updates to TensorFlow and Keras.
+Running the [keras_experimental](https://github.com/avolkov1/keras_experiments) library is challenging as this library hasn't been updated in a while, making it incompatible with updates to TensorFlow and Keras.
 
-These bits will install a Python virtualenv where keras_experimental can run.  Assumes you can use FredHutch lmod modules for Python, CUDA, and GCC
+This code will install a Python virtualenv where keras_experimental can run.
+
+> This assumes you can use FredHutch lmod modules for Python, CUDA, and GCC
 
 # Use
 
@@ -22,7 +24,7 @@ virtualenv ./venv
 pip install -r ./requirements.txt
 ```
 
-There may be other versions that work, but the TensorFlow and Keras versions indicated in that file are about the latest versions that are compatible with keras_experimental
+> There may be other versions that work, but the TensorFlow and Keras versions indicated in that file are about the latest versions that seem to be compatible with keras_experimental
 
 Last it's necessary to install keras_experimental.  Make sure the virtualenv is activated and run:
 
