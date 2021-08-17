@@ -13,7 +13,7 @@ virtualenv ./venv
 
 # Activate and add requirements
 . venv/bin/activate
-pip install -r ./requirements
+pip install -r ./requirements.txt
 
 # Install keras_experiments from github (we 
 # could also use a git source in `pip install`)
