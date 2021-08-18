@@ -8,6 +8,20 @@ This code will install a Python virtualenv where keras_experimental can run.
 
 # Use
 
+## Getting this Repository
+
+### Using git
+
+Use `git clone https://github.com/FredHutch/plucky-penguin.git` to clone the repository.  This will create a directory called "plucky-penguin" in the directory where you have run this command.  `cd` into the repository directory before running installation or setup steps
+
+### Using wget
+
+Download and extract using `wget`:
+
+    wget -O https://github.com/FredHutch/plucky-penguin/archive/refs/tags/1.1.tar.gz | tar xvf -
+
+This creates a directory named "plucky-penguin-1.1" in the directory where you have run this command.  `cd` into this directory before running installation or setup steps
+
 ## Installation
 
 Installation starts with loading a usable Python and having CUDA libraries available (specifically libcudart):
@@ -40,4 +54,8 @@ The script `install.sh` runs all of these steps for you.
 
 Once installation is complete the virtualenv will have all the libraries needed.  In any scripts or each time you start a new shell where you wish to use keras_experimental make sure to load Python and CUDA and activate the environment.
 
-The file `setup_env.sh` contains commands necessary to do this- use the command `. ./setup_env.sh` to configure the current shell.
+The file `setup_env.sh` contains commands necessary to do this:
+
+  - `cd` into the directory where you have downloaded this repository
+  - run `. ./setup_env.sh` to configure the current shell
+
