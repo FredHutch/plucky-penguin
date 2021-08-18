@@ -1,5 +1,6 @@
-keras==2.3.1
-tensorflow==2.4.3
+keras==2.2.4
+tensorflow>=1.15,<2.0
 pandas
-numpy
+numpy<1.19.0,>=1.16.0
 scikit-learn
+h5py<=2.10.0
