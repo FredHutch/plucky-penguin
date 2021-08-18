@@ -18,9 +18,9 @@ Use `git clone https://github.com/FredHutch/plucky-penguin.git` to clone the rep
 
 Download and extract using `wget`:
 
-    wget -O https://github.com/FredHutch/plucky-penguin/archive/refs/tags/1.1.tar.gz | tar xvf -
+    wget -O - https://github.com/FredHutch/plucky-penguin/archive/refs/tags/1.2.tar.gz | tar xzvf -
 
-This creates a directory named "plucky-penguin-1.1" in the directory where you have run this command.  `cd` into this directory before running installation or setup steps
+This creates a directory named "plucky-penguin-1.2" in the directory where you have run this command.  `cd` into this directory before running installation or setup steps
 
 ## Installation
 
