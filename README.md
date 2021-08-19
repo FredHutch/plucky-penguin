@@ -8,22 +8,22 @@ This code will install a Python virtualenv where keras_experimental can run.
 
 # Use
 
-> These instructions are for release 1.2.
+> These instructions are for release 1.3.
 
 ## Getting this Repository
 
 Download and extract using `wget`:
 
-    wget -O - https://github.com/FredHutch/plucky-penguin/archive/refs/tags/1.2.tar.gz | tar xzvf -
+    wget -O - https://github.com/FredHutch/plucky-penguin/archive/refs/tags/1.3.tar.gz | tar xzvf -
 
-This creates a directory named "plucky-penguin-1.2" in the directory where you have run this command.  `cd` into this directory before running installation or setup steps
+This creates a directory named "plucky-penguin-1.3" in the directory where you have run this command.  `cd` into this directory before running installation or setup steps
 
 ## Installation
 
 The script `install.sh` in this repository will install a virtual environment in the current directory and add the necessary libraries to this virtual environment.  In the directory where you have downloaded, simply run:
 
 ```
-./plucky-penguin-1.2/install.sh
+./plucky-penguin-1.3/install.sh
 ```
 
 When complete you will see a new directory `venv` containing the virtual environment.  This can now be actvated using the `setup_env.sh` command
@@ -35,7 +35,7 @@ Once installation is complete the virtualenv will have all the libraries needed.
 The file `setup_env.sh` contains commands necessary to do this:
 
   - `cd` into the directory where you ran `install.sh`
-  - run `. ./plucky-penguin-1.2/setup_env.sh` to configure the current shell
+  - run `. ./plucky-penguin-1.3/setup_env.sh` to configure the current shell
 
 
 # Addenda
