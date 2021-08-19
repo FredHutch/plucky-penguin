@@ -18,7 +18,15 @@ pip install -r ${INSTROOT}/requirements.txt
 
 # Install keras_experiments from github (we 
 # could also use a git source in `pip install`)
-git clone https://github.com/avolkov1/keras_experiments.git ${INSTROOT}/keras_experiments
+if [ -d ${INSTROOT}/keras_experiments && -f ${INSTROOT}/keras_experiments/.git ]
+then
+  pushd ${INSTROOT}/keras_experiments
+  git pull
+  popd
+else
+  rm -rf ${INSTROOT}/keras_experiments
+  git clone https://github.com/avolkov1/keras_experiments.git ${INSTROOT}/keras_experiments
+fi
 pushd ${INSTROOT}/keras_experiments
 pip install -e .
 popd
