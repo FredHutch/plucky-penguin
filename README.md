@@ -24,7 +24,29 @@ This creates a directory named "plucky-penguin-1.2" in the directory where you h
 
 ## Installation
 
-Installation starts with loading a usable Python and having CUDA libraries available (specifically libcudart):
+The script `install.sh` in this repository will install a virtual environment in the current directory and add the necessary libraries to this virtual environment.  In the directory where you have downloaded, simply run:
+
+```
+./plucky-penguin/install.sh
+```
+
+When complete you will see a new directory `venv` containing the virtual environment.  This can now be actvated using the `setup_env.sh` command
+
+## Use
+
+Once installation is complete the virtualenv will have all the libraries needed.  In any scripts or each time you start a new shell where you wish to use keras_experimental make sure to load Python and CUDA and activate the environment.
+
+The file `setup_env.sh` contains commands necessary to do this:
+
+  - `cd` into the directory where you have downloaded this repository
+  - run `. ./setup_env.sh` to configure the current shell
+
+
+# Addenda
+
+## Manual Installation
+
+These are the steps the `install.sh` script runs.  It starts with loading a usable Python and having CUDA libraries available (specifically libcudart):
 
 ```
 ml Python/3.8.6-GCCcore-10.2.0 CUDAcore/11.1.1-GCCcore-10.2.0
@@ -47,15 +69,4 @@ git clone https://github.com/avolkov1/keras_experiments.git
 cd keras_experiments
 pip install -e .
 ```
-
-The script `install.sh` runs all of these steps for you.
-
-## Use
-
-Once installation is complete the virtualenv will have all the libraries needed.  In any scripts or each time you start a new shell where you wish to use keras_experimental make sure to load Python and CUDA and activate the environment.
-
-The file `setup_env.sh` contains commands necessary to do this:
-
-  - `cd` into the directory where you have downloaded this repository
-  - run `. ./setup_env.sh` to configure the current shell
 
