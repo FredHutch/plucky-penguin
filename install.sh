@@ -3,6 +3,7 @@
 # Install tools to allow run of keras_experiments
 #
 set -ex
+INSTROOT=$(dirname $0)
 
 # Load necessary modules
 ml Python/3.7.4-GCCcore-8.3.0 CUDA/10.2.89-GCC-8.3.0
@@ -13,11 +14,11 @@ virtualenv ./venv
 
 # Activate and add requirements
 . venv/bin/activate
-pip install -r ./requirements.txt
+pip install -r ${INSTROOT}/requirements.txt
 
 # Install keras_experiments from github (we 
 # could also use a git source in `pip install`)
-git clone https://github.com/avolkov1/keras_experiments.git
-pushd keras_experiments
+git clone https://github.com/avolkov1/keras_experiments.git ${INSTROOT}/keras_experiments
+pushd ${INSTROOT}/keras_experiments
 pip install -e .
 popd
